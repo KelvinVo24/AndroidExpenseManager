@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/title_campus_expense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Campus Expense"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_campus_expense"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:layout_marginBottom="24dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email:"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="15dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/email_reg" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password:"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/edittext_background"
+                    android:padding="15dp"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:id="@+id/password_reg" />
+
+                <Button
+                    android:id="@+id/btn_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#000080"
+                    android:text="Register"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/forget_signin_here"
+                    android:text="Already have an account? Sign in here."
+                    android:layout_marginTop="24dp"
+                    android:padding="8dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
